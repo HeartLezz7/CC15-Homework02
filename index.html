@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{box-sizing: border-box;margin: 8px;}
+        .card {
+            border: 1px solid black;
+            border-radius: 10px;
+            position: relative;
+            width: 200px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        p {
+            text-align: center;
+            font-size: 24px;
+
+        }
+        .num {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 0px;
+            width: 25px;
+            height: 25px;
+            top: -20px;
+            right: -20px;
+            /* transform: translate(-50%); */
+        }
+        .x {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 0px;
+            left: 10px;
+            transform: scale(2);
+
+
+        }
+    </style>
+</head>
+<body>
+    <head>
+        <div class="card">
+            <img src="./human.png" alt="soldier">
+            <hr style="margin: 0px;">
+            <p>J. Oppenheimer</p>
+            <div class="x">x</div>
+            <div class="num">
+                <p>7</p>
+            </div>
+        </div>
+    </head>
+</body>
+</html>
